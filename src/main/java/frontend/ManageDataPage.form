@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="frontend.ManageDataPage">
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="2" left="10" bottom="10" right="10"/>
+    <constraints>
+      <xy x="20" y="20" width="551" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="7b8db" binding="manageDataPanel" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="b5cba" class="javax.swing.JLabel" binding="titleLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font style="1"/>
+              <text value="Select the item for which you want to manage data"/>
+            </properties>
+          </component>
+          <tabbedpane id="abb26" binding="tabGroup">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="200" height="200"/>
+              </grid>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="8afce" binding="flightTab" layout-manager="GridLayoutManager" row-count="7" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="5" left="10" bottom="10" right="10"/>
+                <constraints>
+                  <tabbedpane title="Flight"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="5b2cc" class="javax.swing.JButton" binding="flightSubmitButton">
+                    <constraints>
+                      <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="SUBMIT"/>
+                    </properties>
+                  </component>
+                  <component id="17eae" class="javax.swing.JTextField" binding="flightNumText">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font style="2"/>
+                      <text value="Enter the flight number(String)"/>
+                    </properties>
+                  </component>
+                  <component id="a449b" class="javax.swing.JTextField" binding="availSeatsText">
+                    <constraints>
+                      <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font style="2"/>
+                      <text value="Enter the number of available seats(Integer)"/>
+                    </properties>
+                  </component>
+                  <component id="ffb3e" class="javax.swing.JLabel" binding="flightNumberLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Flight Number"/>
+                    </properties>
+                  </component>
+                  <component id="c5529" class="javax.swing.JLabel" binding="availSeatsLabel">
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Available Seats"/>
+                    </properties>
+                  </component>
+                  <component id="28657" class="javax.swing.JLabel" binding="flightPriceLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <labelFor value="3da21"/>
+                      <text value="Price"/>
+                    </properties>
+                  </component>
+                  <component id="e75ce" class="javax.swing.JLabel" binding="totalSeatsLabel">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Total Seats"/>
+                    </properties>
+                  </component>
+                  <component id="fd500" class="javax.swing.JLabel" binding="fromCityLabel">
+                    <constraints>
+                      <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Departure"/>
+                    </properties>
+                  </component>
+                  <component id="1c0d5" class="javax.swing.JTextField" binding="totalSeatsText">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font style="2"/>
+                      <text value="Enter the number of total seats(Integer)"/>
+                    </properties>
+                  </component>
+                  <component id="3da21" class="javax.swing.JTextField" binding="flightPriceText">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font style="2"/>
+                      <text value="Enter the price(Integer)"/>
+                    </properties>
+                  </component>
+                  <component id="9f88f" class="javax.swing.JTextField" binding="fromCityText">
+                    <constraints>
+                      <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font style="2"/>
+                      <text value="Enter a city(String)"/>
+                    </properties>
+                  </component>
+                  <component id="7f945" class="javax.swing.JLabel" binding="arivCityLabel">
+                    <constraints>
+                      <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Destination"/>
+                    </properties>
+                  </component>
+                  <component id="aca62" class="javax.swing.JTextField" binding="arivCityText">
+                    <constraints>
+                      <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font style="2"/>
+                      <text value="Enter a city(String)"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="3e8a1" binding="hotelTab" layout-manager="GridLayoutManager" row-count="5" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="5" left="10" bottom="10" right="10"/>
+                <constraints>
+                  <tabbedpane title="Hotel"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="795f9" class="javax.swing.JButton" binding="hotelSubmitButton">
+                    <constraints>
+                      <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="SUBMIT"/>
+                    </properties>
+                  </component>
+                  <component id="2161e" class="javax.swing.JLabel" binding="hotelLocationLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Location"/>
+                    </properties>
+                  </component>
+                  <component id="4bbe3" class="javax.swing.JLabel" binding="hotelPriceLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Price"/>
+                    </properties>
+                  </component>
+                  <component id="d0677" class="javax.swing.JTextField" binding="hotelLocationText">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font style="2"/>
+                      <text value="Enter a city(String)"/>
+                    </properties>
+                  </component>
+                  <component id="a9db5" class="javax.swing.JTextField" binding="hotelPriceText">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font style="2"/>
+                      <text value="Enter the price(Integer)"/>
+                    </properties>
+                  </component>
+                  <component id="5656b" class="javax.swing.JLabel" binding="totalRoomsLabel">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Total Rooms"/>
+                    </properties>
+                  </component>
+                  <component id="fb804" class="javax.swing.JTextField" binding="totalRoomsText">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font style="2"/>
+                      <text value="Enter the number of total rooms(Integer)"/>
+                    </properties>
+                  </component>
+                  <component id="99b28" class="javax.swing.JLabel" binding="availRoomsLabel">
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Available Rooms"/>
+                    </properties>
+                  </component>
+                  <component id="f9c5b" class="javax.swing.JTextField" binding="availRoomsText">
+                    <constraints>
+                      <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font style="2"/>
+                      <text value="Enter the number of available rooms(Integer)"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="c801d" binding="busTab" layout-manager="GridLayoutManager" row-count="5" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="5" left="10" bottom="10" right="10"/>
+                <constraints>
+                  <tabbedpane title="Bus"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="7750d" class="javax.swing.JButton" binding="busSubmitButton">
+                    <constraints>
+                      <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="SUBMIT"/>
+                    </properties>
+                  </component>
+                  <component id="a2a8f" class="javax.swing.JLabel" binding="busLocationLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Location"/>
+                    </properties>
+                  </component>
+                  <component id="b8d7c" class="javax.swing.JTextField" binding="busLocationText">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font style="2"/>
+                      <text value="Enter a city(String)"/>
+                    </properties>
+                  </component>
+                  <component id="27b44" class="javax.swing.JLabel" binding="busPriceLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Price"/>
+                    </properties>
+                  </component>
+                  <component id="8f430" class="javax.swing.JTextField" binding="busPriceText">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font style="2"/>
+                      <text value="Enter the price(Integer)"/>
+                    </properties>
+                  </component>
+                  <component id="5dec0" class="javax.swing.JLabel" binding="totalBusLabel">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Total Buses"/>
+                    </properties>
+                  </component>
+                  <component id="3f351" class="javax.swing.JTextField" binding="totalBusText">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font style="2"/>
+                      <text value="Enter the number of total buses(Integer)"/>
+                    </properties>
+                  </component>
+                  <component id="b5835" class="javax.swing.JLabel" binding="availBusLabel">
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Available Buses"/>
+                    </properties>
+                  </component>
+                  <component id="844fb" class="javax.swing.JTextField" binding="availBusText">
+                    <constraints>
+                      <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font style="2"/>
+                      <text value="Enter the number of available buses(Integer)"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="a819f" binding="customerTab" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="5" left="10" bottom="10" right="10"/>
+                <constraints>
+                  <tabbedpane title="Customer"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="ad0e" class="javax.swing.JButton" binding="customerSubmitButton">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="SUBMIT"/>
+                    </properties>
+                  </component>
+                  <component id="5f645" class="javax.swing.JLabel" binding="custNameLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Name"/>
+                    </properties>
+                  </component>
+                  <component id="ff33f" class="javax.swing.JTextField" binding="custNameText">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font style="2"/>
+                      <text value="Enter a name(String)"/>
+                    </properties>
+                  </component>
+                  <component id="e63a4" class="javax.swing.JLabel" binding="custIdLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="ID"/>
+                    </properties>
+                  </component>
+                  <component id="7ce08" class="javax.swing.JTextField" binding="custIdText">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font style="2"/>
+                      <text value="Enter an ID(Integer)"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </tabbedpane>
+          <component id="bab3e" class="javax.swing.JRadioButton" binding="loadRadioButton">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="LOAD"/>
+            </properties>
+          </component>
+          <component id="749f1" class="javax.swing.JRadioButton" binding="updateRadioButton">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="UPDATE"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="mangeDataGroupButton">
+      <member id="bab3e"/>
+      <member id="749f1"/>
+    </group>
+  </buttonGroups>
+</form>
