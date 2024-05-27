@@ -172,7 +172,7 @@ java -jar .\TravelReservationSystem.jar
 
 路线查询功能可以接受任意情况的路线，包括不限于特殊情况：路线汇聚、路线分叉、环状路线等，他们的查询结果都遵循上述规范。
 
-路线查询相关测试见[附录](## 附录)
+路线查询相关测试见[附录](https://github.com/abecedarian007/TravelReservationSystem/tree/master?tab=readme-ov-file#%E9%99%84%E5%BD%95)
 
 ## 附录
 
